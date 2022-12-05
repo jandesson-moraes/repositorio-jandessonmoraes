@@ -1,0 +1,26 @@
+.user-card {
+    display: flex;    
+    gap: var(--gap-1);
+    align-items: center;
+}
+
+.user-card div:nth-of-type(1){
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.user-card div:nth-of-type(1) img {
+    object-fit: cover;
+}
+
+.user-card div:nth-of-type(2) h3 {
+    font-weight: 600;
+    font-size: var(--size-2);
+}
+
+.user-card div:nth-of-type(2) span {
+    font-weight: 400;
+    font-size: var(--size-4);
+}

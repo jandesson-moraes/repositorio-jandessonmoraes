@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./src/assets/img/Iconarchive-up.svg" type="image/x-icon">
+  <link rel="stylesheet" href="src/styles/user-card.css">
+  <link rel="stylesheet" href="src/styles/modal.css">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="stylesheet" href="src/styles/index.css">
+  <title>TechPosters</title>
+</head>
+
+  <body>
+    <header>
+      <nav>
+          <img class="img-header" src="./src/assets/img/logo.svg" alt="Logo TechPosters">
+          <button>
+            Sair
+          </button>
+      </nav>
+    </header>
+    
+    <div class="content-wrapper mt-1 container dis-flex justify-between flex-wrap gap-4 pb-1">
+      <div class="form-wrapper container-minor dis-flex collun large " >
+        <div class="user-card">
+          <div class="img-wrapper">
+            <img src="src/assets/img/user1.svg" alt="Foto Samuel Leão">
+          </div>
+          <div>
+            <h3>
+              Samuel Leão
+            </h3>
+            <span>
+              Front end engineer
+            </span>
+          </div>
+        </div>
+        <form class="add-post dis-flex collun large">
+          <input id="post-title" type="text" placeholder="Digite o título do post">
+          <textarea id="post-description" class="padding-1 text-1 color-light-grey" 
+            placeholder="Digitar descrição do post" cols="10" rows="5"></textarea>
+          <button class="self-end post-button">
+            Postar
+          </button>
+        </form>
+      </div>
+
+      <aside class="suggestions-wrapper dis-flex collun large width-30">
+        <h3 class="title-2">
+          Sugestões para você seguir
+        </h3>
+        <ul class="follow-suggestions dis-flex collun large">
+
+        </ul>
+      </aside>
+
+      <main>
+        <section class="container-minor dis-flex collun large">
+          <h2 class="title-2">
+            Posts
+          </h2>
+          <ul class="posts-wrapper dis-flex collun spacing">
+
+          </ul>
+        </section>
+      </main>    
+    </div> 
+    <script src="./src/scripts/users.js"></script>
+    <script src="./src/scripts/sugestUsers.js"></script>
+    <script src="./src/scripts/posts.js"></script>   
+    <script src="./src/scripts/index.js"></script>
+  </body>
+
+</html>
